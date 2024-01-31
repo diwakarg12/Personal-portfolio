@@ -25,6 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+label {
+  display: block;
+}
 
 @layer utilities {
   .text-balance {

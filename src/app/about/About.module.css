@@ -1,0 +1,19 @@
+.icon {
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  font-size: 2.5rem;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.image {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+}
