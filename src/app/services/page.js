@@ -15,7 +15,7 @@ const page = () => {
                             <Link href="/"><button className='p-2 bg-orange-500 rounded-md mt-4 '>View Project</button></Link>
                         </div>
                         <div className='w-1/2 p-2 pl-20 pr-10'>
-                            <Image src={item.pic} alt="UI-UX" width={350} height={400} />
+                            <Image src={item.pic} alt="UI-UX" width={450} height={400} />
                         </div>
                     </div>
                 ))

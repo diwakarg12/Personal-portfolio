@@ -8,9 +8,33 @@ export const projectData = [
     },
     {
         id: 2,
-        title: "An E-learning cum gaming website in which one can learning coding and play some web based games.",
+        title: "E-learning cum gaming website.",
         img: "/unityCoding.jpg",
+        sideImgl: "",
+        sideImgr: "",
         description: 'This is basically a e-Learning cum Gaming website, user can visit the website and explore its features and functionality. we have some different types of web based games which anyone can play and enjoy, for these there is no need to login to the website, although you can but not necessarily, we also have some programming languages that anyone can learn and one more feature that is when a user finish the course then he/she gets a google form link , after filling the google form, user will get certificate for the course on their email id. Course section is protected with email id and password, means only authorized user can visit the course section (i.e User with valid username and password), so to learn anything or want to explore the course page then you have to login to the website.',
+        features: [
+            {
+                title: "Responsive Design",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae."
+            },
+            {
+                title: "Web based Games",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "AI Based Quiz System",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Updated Syllabus of different technologies",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Secured login and signup system",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            }
+        ],
         toolsUsed: 'Html, Css, Bootstrap, JavaScript, PHP, MYSQL',
     },
     {
@@ -18,6 +42,28 @@ export const projectData = [
         title: "AttireAvenue (Ecommerce Website)",
         img: "/ecommerce.webp",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        features: [
+            {
+                title: "Responsive Design",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae."
+            },
+            {
+                title: "Web based Games",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "AI Based Quiz System",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Updated Syllabus of different technologies",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Secured login and signup system",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            }
+        ],
         toolsUsed: 'Html, Css, BootStrap, Javascript, Ajax, PHP, MYSQL,',
     },
     {
@@ -25,6 +71,28 @@ export const projectData = [
         title: "Whatsapp clone with personal touch",
         img: "/whatsapp.jpg",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        features: [
+            {
+                title: "Responsive Design",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae."
+            },
+            {
+                title: "Web based Games",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "AI Based Quiz System",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Updated Syllabus of different technologies",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Secured login and signup system",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            }
+        ],
         toolsUsed: 'React JS, react-router, react-icons, react-dev-tools, , Tailwind Css,',
     },
     {
@@ -32,6 +100,28 @@ export const projectData = [
         title: "Gym Management system.",
         img: "/gym.jpg",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        features: [
+            {
+                title: "Responsive Design",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae."
+            },
+            {
+                title: "Web based Games",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "AI Based Quiz System",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Updated Syllabus of different technologies",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Secured login and signup system",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            }
+        ],
         toolsUsed: 'React JS, TypeScript, tailwind, HeroIcons',
     },
     {
@@ -39,6 +129,28 @@ export const projectData = [
         title: "A login page with mobile OTP.",
         img: "/otp.jpg",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        features: [
+            {
+                title: "Responsive Design",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae."
+            },
+            {
+                title: "Web based Games",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "AI Based Quiz System",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Updated Syllabus of different technologies",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Secured login and signup system",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            }
+        ],
         toolsUsed: 'React JS, tailwind',
     },
     {
@@ -46,6 +158,28 @@ export const projectData = [
         title: "Tic-Tac-Toe Game",
         img: "/tictactoe.jpg",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        features: [
+            {
+                title: "Responsive Design",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae."
+            },
+            {
+                title: "Web based Games",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "AI Based Quiz System",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Updated Syllabus of different technologies",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Secured login and signup system",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            }
+        ],
         toolsUsed: 'React JS,CSS3 ,React CSS module',
     },
     {
@@ -53,6 +187,28 @@ export const projectData = [
         title: "Realtime Chat Application",
         img: "/chatapp.jpg",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        features: [
+            {
+                title: "Responsive Design",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae."
+            },
+            {
+                title: "Web based Games",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "AI Based Quiz System",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Updated Syllabus of different technologies",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Secured login and signup system",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            }
+        ],
         toolsUsed: 'React JS ,SCss ,Sass,Redux ,Firebase, ',
     },
     {
@@ -60,6 +216,28 @@ export const projectData = [
         title: "Basic Calculator",
         img: "/calculator.jpg",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        features: [
+            {
+                title: "Responsive Design",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae."
+            },
+            {
+                title: "Web based Games",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "AI Based Quiz System",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Updated Syllabus of different technologies",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Secured login and signup system",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            }
+        ],
         toolsUsed: 'React JS, Tailwind Css',
     },
     {
@@ -67,13 +245,57 @@ export const projectData = [
         title: "Farm Management System",
         img: "/FarmManagement.png",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        features: [
+            {
+                title: "Responsive Design",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae."
+            },
+            {
+                title: "Web based Games",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "AI Based Quiz System",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Updated Syllabus of different technologies",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Secured login and signup system",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            }
+        ],
         toolsUsed: 'Core Java ,Java Swing ,Java AWT ,Java Applet ,JDBC ,MYSQL',
     },
     {
         id: 11,
-        title: "Notes Management System in which on can login to upload and download document",
+        title: "Notes Management System",
         img: "/notes.webp",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        features: [
+            {
+                title: "Responsive Design",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae."
+            },
+            {
+                title: "Web based Games",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "AI Based Quiz System",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Updated Syllabus of different technologies",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            },
+            {
+                title: "Secured login and signup system",
+                desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia ipsam atque, commodi neque soluta nobis voluptates nam tempore tenetur odit sit sunt impedit officiis voluptatibus repellendus, quasi delectus amet ipsa facere. Recusandae maiores atque quod corporis aliquam architecto cum facere pariatur fugit. Officia consequuntur soluta ea voluptate aperiam beatae",
+            }
+        ],
         toolsUsed: 'Html, Css, Bootstrap, JavaScript, PHP, MYSQL',
     },
 ]

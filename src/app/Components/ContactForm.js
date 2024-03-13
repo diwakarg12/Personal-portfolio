@@ -20,7 +20,7 @@ const ContactForm = () => {
             <div className={styles.formGroup}>
                 <label for="Message" className={styles.label}>Your message</label>
                 <div className={styles.inputGroup}>
-                    <textarea id="Message" name="Message" className={styles.formControl} rows="6" maxlength="3000" required></textarea>
+                    <textarea id="Message" name="Message" className={styles.formControl} rows={6} maxlength="3000" required></textarea>
                 </div>
             </div>
 
