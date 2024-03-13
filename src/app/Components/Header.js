@@ -17,7 +17,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className='w-1/4 flex items-center justify-center'>
-                <Link href="/contact"><p className='bg-slate-700 text-white font-semibold p-2 rounded-lg hover:bg-green-500 transition delay-100 ease-in '>Let's Talk</p></Link>
+                <Link href="/contact"><p className='bg-slate-700 text-white font-semibold p-2 rounded-lg hover:bg-green-500 transition delay-100 ease-in '>Let`s Talk</p></Link>
             </div>
         </div>
     )
