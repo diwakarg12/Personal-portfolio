@@ -13,7 +13,7 @@ const HomeTestimonial = () => {
         <div className='flex items-center justify-center mt-12'>
             <div className='w-1/2 flex items-center justify-center'>
                 {/* Assuming there's an 'image' property in your testimonial object */}
-                <Image src={currentTestimonial.image} className='' width={200} height={300} />
+                <Image src={currentTestimonial.image} className='' width={200} height={300} alt="" />
             </div>
             <div className='w-1/2 justify-center pr-40'>
                 <h1>Testimonial</h1>
