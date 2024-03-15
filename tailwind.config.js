@@ -1,5 +1,6 @@
+import withMT from "@material-tailwind/react/utils/withMT";
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,11 +15,11 @@ module.exports = {
       },
     },
     screens: {
-      'sm': { 'max': '576px' },
-      'md': { 'max': '767px' },
-      'lg': { 'max': '1024px' },
-      'xl': { 'max': '1200px' },
+      'sm': { 'min': '576px' },
+      'md': { 'min': '767px' },
+      'lg': { 'min': '1024px' },
+      'xl': { 'min': '1200px' },
     }
   },
   plugins: [],
-};
+});
