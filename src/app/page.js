@@ -8,7 +8,7 @@ import Ribbon from "./Components/Ribbon";
 
 export default function page() {
   return (
-    <div className="bg-black text-slate-400 sm:overflow-x-hidden border-2 sm:text-center">
+    <div className="bg-black text-slate-400 sm:overflow-x-hidden mt-4 sm:text-center">
       <HomeHero />
       <Ribbon />
       <HomeAboutMe />

@@ -10,18 +10,18 @@ const Page = ({ params }) => {
     return (
         <div className='flex flex-col items-center justify-center sm:w-screen'>
             <div className='mt-12 flex items-center justify-center overflow-x-hidden'>
-                <Image src={data?.img} width={400} height={400} className='w-1/3 h-80 mt-32 rounded-lg' alt="" />
-                <Image src={data?.img} width={400} height={400} className='w-2/3 mx-2 h-[28rem] rounded-lg' alt="" />
-                <Image src={data?.img} width={400} height={400} className='w-1/3 h-80 mt-32 rounded-lg' alt="" />
+                <Image src={data?.img} width={400} height={400} className='w-1/3 sm:hidden lg:block h-80 mt-32 rounded-lg' alt="" />
+                <Image src={data?.img} width={400} height={400} className='lg:w-2/3 sm:w-11/12 mx-2 h-[28rem] object-cover rounded-lg' alt="" />
+                <Image src={data?.img} width={400} height={400} className='w-1/3 sm:hidden lg:block h-80 mt-32 rounded-lg' alt="" />
             </div>
-            <div className='ml-36 mr-36 pt-8 sm:mr-0 sm:ml-8'>
+            <div className='ml-36 mr-36 pt-8 sm:ml-8 sm:mr-8'>
                 <h1 className='text-4xl font-extrabold text-center mb-12'>{data?.title}</h1>
                 <h2 className='text-3xl font-semibold mb-4'>Overview</h2>
                 <p className='text-gray-500 font-medium'>{data?.description}</p>
                 <p className='underline text-blue-500 text-xl font-medium'><Link href="">Please Visit this link to access the website</Link></p>
                 <h2 className='text-2xl text-gray-500 font-semibold mb-8 mt-8'>Key Features</h2>
                 {
-                    data.features.map((feature, index) => (
+                    data?.features?.map((feature, index) => (
                         <div key={index}>
                             <h3 className='text-xl font-semibold'>{feature?.title}</h3>
                             <p className='font-medium text-gray-500'>{feature?.desc}</p>

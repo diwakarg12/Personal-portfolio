@@ -4,7 +4,7 @@ import Image from 'next/image'
 const HomeAboutMe = () => {
     return (
         <div className='flex flex-wrap items-center justify-center md:mt-12 lg:mt-40 sm:mt-24'>
-            <div className='lg:w-1/2 flex flex-col items-center justify-center sm:w-full border-2'>
+            <div className='lg:w-1/2 flex flex-col items-center justify-center sm:w-full'>
                 <Image src="/profile3.png" alt="Profile Picture" className="md:w-3/4 sm:w-10/12" height={350} width={350} />
             </div>
             <div className='lg:w-1/2 item-start lg:text-start sm:flex sm:flex-col text-white text-lg font-semibold pr-28 sm:p-4 sm:w-full sm:pt-12 lg:mt-0 sm:text-center md:pl-28 lg:pl-0'>

@@ -4,7 +4,7 @@ import { service } from './serviceOffered'
 
 const page = () => {
     return (
-        <div className='bg-black md:p-6 sm:p-0 flex flex-col flex-wrap items-center justify-center border-2'>
+        <div className='bg-black md:p-6 sm:p-0 flex flex-col flex-wrap items-center justify-center'>
             <h1 className='text-4xl font-semibold md:text-start'>My Services</h1>
             {
                 service.map((item) => (

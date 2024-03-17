@@ -12,7 +12,7 @@ import { HiOutlineXMark } from "react-icons/hi2";
 
 function NavList() {
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-x-12">
+    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-x-24">
       <Typography
         as="li"
         variant="h5"
@@ -86,7 +86,7 @@ export default function Header() {
   const [openNav, setOpenNav] = React.useState(false);
 
   const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
+    window.innerWidth >= 767 && setOpenNav(false);
 
   React.useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
@@ -97,17 +97,17 @@ export default function Header() {
   }, []);
 
   return (
-    <Navbar className="lg:mx-auto max-w-screen-lg md:max-w-screen-md py-3 bg-transparent text-white border-b-2 border-r-0 border-l-0 border-t-0 border-orange-700 rounded-none sticky top-0 z-10">
+    <Navbar className="lg:mx-auto lg:w-[1150rem] md:max-w-screen-md py-3 bg-transparent text-white border-b-2 border-r-0 border-l-0 border-t-0 border-orange-700 rounded-none sticky top-0 z-10">
       <div className="flex items-center">
-        <Typography as="li" variant="h4" className="mr-8 cursor-pointer py-1.5">
+        <Typography as="li" variant="h4" className="cursor-pointer py-1.5">
           <Link
             href="/"
-            className="flex items-center hover:text-blue-500 transition-colors"
+            className="flex items-center justify-center hover:text-blue-500 transition-colors"
           >
-            Diwakar Giri
+            Diwakar
           </Link>
         </Typography>
-        <div className="hidden ml-80 mr-16 lg:block ">
+        <div className="hidden ml-80 lg:block ">
           <NavList />
         </div>
         <IconButton
