@@ -18,7 +18,6 @@ module.exports = withMT({
       'sm': { 'min': '576px' },
       'md': { 'min': '767px' },
       'lg': { 'min': '1024px' },
-      'xl': { 'min': '1200px' },
     }
   },
   plugins: [],
