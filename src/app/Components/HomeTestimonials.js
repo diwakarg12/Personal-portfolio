@@ -95,10 +95,10 @@ const HomeTestimonials = () => {
 
     return (
 
-        <div className="rounded-lg flex items-center justify-center mt-8 mr-32">
-            <FaArrowCircleLeft onClick={handlePrevTestimonial} className='cursor-pointer text-white text-4xl absolute right-[80rem] hover:text-green-600' />
+        <div className="rounded-lg flex items-center justify-center mt-8 mr-32 md:ml-48 lg:ml-0 sm:ml-4 sm:mr-4">
+            {/* <FaArrowCircleLeft onClick={handlePrevTestimonial} className='cursor-pointer text-white text-4xl absolute lg:right-[80rem] hover:text-green-600 md:left-4 md:right-[40rem] lg:left-16 sm:left-4' /> */}
             {/* Left Section */}
-            <div className='border-4 rounded-md border-yellow-800 h-[28rem] w-1/3 flex items-center justify-center p-8 relative'>
+            <div className='border-4 rounded-md lg:border-yellow-800 h-[28rem] md:w-1/3 sm:w-3/4 flex items-center justify-center p-8 relative md:border-black'>
                 <div className="p-6 bg-black w-48 flex flex-col items-center justify-center absolute left-[-20%]">
                     <Image
                         src={currentTestimonial.image}
@@ -113,7 +113,7 @@ const HomeTestimonials = () => {
                 </div>
 
                 {/* Right Section */}
-                <div className="p-4 w-[30rem] bg-black absolute right-[-50%] ">
+                <div className="p-4 w-[30rem] bg-black absolute right-[-50%] flex flex-col md:text-start sm:text-center ">
                     <div className='bg-orange-600 rounded-lg p-6'>
                         <h2 className="text-white text-xl font-semibold">Our Clients</h2>
                         <h1 className='text-white text-3xl font-bold'>FEEDBACK</h1>
@@ -131,7 +131,7 @@ const HomeTestimonials = () => {
                     {/* Add star icons or other relevant content */}
                 </div>
             </div>
-            <FaArrowCircleRight onClick={handleNextTestimonial} className='cursor-pointer text-white text-4xl absolute left-[80rem] hover:text-green-600' />
+            {/* <FaArrowCircleRight onClick={handleNextTestimonial} className='cursor-pointer text-white text-4xl absolute lg:left-[85rem] hover:text-green-600 md:right-4 md:left-[40rem] lg:right-0' /> */}
         </div >
     );
 };

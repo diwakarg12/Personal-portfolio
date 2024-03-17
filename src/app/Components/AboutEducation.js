@@ -3,7 +3,7 @@ import React from 'react'
 const AboutEducation = ({ title, content }) => {
     return (
         <div className='w-full p-2'>
-            <h1 className='text-3xl font-semibold mt-2 mb-4 bg-gradient-to-r from-violet-700 to-amber-400 bg-clip-text text-transparent'>{title}</h1>
+            <h1 className='text-3xl font-semibold mt-2 mb-4 text-white'>{title}</h1>
             {
                 content.map((item, index) => (
                     <div key={index}>

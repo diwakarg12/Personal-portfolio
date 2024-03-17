@@ -2,7 +2,7 @@ import styles from '../contact/Contact.module.css';
 
 const ContactForm = () => {
     return (
-        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        <form id="fcf-form-id" class="fcf-form-class" method="post" >
             <div className={styles.formGroup}>
                 <label for="Name" className={styles.label}>Your name</label>
                 <div className={styles.inputGroup}>

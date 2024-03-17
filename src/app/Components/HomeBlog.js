@@ -26,10 +26,10 @@ export const blogData = [
 
 const HomeBlog = () => {
     return (
-        <div className='flex items-center justify-center mt-12'>
+        <div className='flex flex-wrap items-center justify-center mt-12 md:w-full'>
             {blogData?.map((item) => (
-                <div className="w-96 h-full m-6" key={item.id}>
-                    <Image src={item.img} alt="blog" width={400} height={400} className="rounded-lg" />
+                <div className="lg:w-96 h-full lg:m-6 md:w-3/4 md:m-0 md:mb-8" key={item.id}>
+                    <Image src={item.img} alt="blog" width={400} height={400} className="rounded-lg md:w-full" />
                     <small className="ml-1 font-medium">{item.date}</small>
                     <div className=" w-full mt-6 flex items-center justify-start">
                         <p className="w-2/3 text-lg font-medium">{item.title}</p>

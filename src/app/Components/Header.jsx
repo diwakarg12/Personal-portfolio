@@ -12,7 +12,7 @@ import { HiOutlineXMark } from "react-icons/hi2";
 
 function NavList() {
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-x-24">
+    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-x-12">
       <Typography
         as="li"
         variant="h5"
@@ -46,7 +46,20 @@ function NavList() {
         className="p-1 font-semibold"
       >
         <Link
-          href="/projects"
+          href="/services"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
+          Services
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="h5"
+        color="white"
+        className="p-1 font-semibold"
+      >
+        <Link
+          href="/portfolio"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Portfolio
@@ -84,13 +97,9 @@ export default function Header() {
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-6 py-3 bg-transparent text-white border-b-2 border-r-0 border-l-0 border-t-0 border-white rounded-none sticky top-0 z-10">
+    <Navbar className="lg:mx-auto max-w-screen-lg md:max-w-screen-md py-3 bg-transparent text-white border-b-2 border-r-0 border-l-0 border-t-0 border-orange-700 rounded-none sticky top-0 z-10">
       <div className="flex items-center">
-        <Typography
-          as="li"
-          variant="h4"
-          className="mr-4 ml-16 cursor-pointer py-1.5"
-        >
+        <Typography as="li" variant="h4" className="mr-8 cursor-pointer py-1.5">
           <Link
             href="/"
             className="flex items-center hover:text-blue-500 transition-colors"
@@ -98,7 +107,7 @@ export default function Header() {
             Diwakar Giri
           </Link>
         </Typography>
-        <div className="hidden ml-96 lg:block ">
+        <div className="hidden ml-80 mr-16 lg:block ">
           <NavList />
         </div>
         <IconButton

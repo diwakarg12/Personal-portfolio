@@ -5,13 +5,11 @@ import { IoLogoInstagram } from "react-icons/io";
 import { TiSocialFacebookCircular } from "react-icons/ti";
 import { RiSendPlaneFill } from "react-icons/ri";
 
-
-
 const About = () => {
     return (
-        <div className='bg-slate-800 text-slate-400 p-2 m-2 flex flex-col items-center justify-center'>
-            <h1 className='flex flex-col text-center text-4xl font-semibold mb-4'>Hi, I am <span className="bg-gradient-to-r from-violet-700 to-amber-400 bg-clip-text text-transparent text-5xl" >Diwakar Giri</span></h1>
-            <p className='text-center w-2/5 text-md font-medium mb-4'>
+        <div className='sm:w-full bg-slate-800 text-slate-400 p-2 m-2 flex flex-col items-center justify-center'>
+            <h1 className='flex flex-col text-center text-4xl font-semibold mb-4'>Hi, I am <span className="text-white text-5xl" >Diwakar Giri</span></h1>
+            <p className='text-center lg:w-2/5 md:w-4/5 sm:w-full text-md font-medium mb-4'>
                 Diligent and organized Software Engineer, adept at transforming ideas into efficient solutions. With a robust foundation in software engineering, I specialize in HTML, CSS, JavaScript, React JS, Next JS, Bootstrap, SASS, C++, and Java
             </p>
             <div className='flex text-xl mb-6'>
