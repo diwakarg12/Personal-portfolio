@@ -102,7 +102,7 @@ export default function Header() {
         <Typography as="li" variant="h4" className="cursor-pointer py-1.5">
           <Link
             href="/"
-            className="flex items-center justify-center hover:text-blue-500 transition-colors"
+            className="flex items-center justify-center hover:text-orange-500 transition-colors"
           >
             Diwakar
           </Link>

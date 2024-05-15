@@ -35,12 +35,10 @@ const HomeHero = () => {
         </p>
         <div className='flex flex-col lg:items-start justify-center mt-6 md:items-center sm:pl-16 lg:pl-0 sm:pr-20 sm:items-center sm:mb-8'>
           <Link
-            href='/'
-            className=' bg-orange-500 p-2 pl-4 pr-4 rounded-md hover:rounded-none font-semibold'
+            href='/contact'
+            className=' bg-orange-500 p-2 pl-4 pr-4 rounded-md hover:rounded-none font-semibold flex text-white'
           >
-            <button className='flex text-white'>
-              Hire Me <RiSendPlaneFill className='text-white text-2xl ml-1' />
-            </button>
+            Hire Me <RiSendPlaneFill className='text-white text-2xl ml-1' />
           </Link>
         </div>
       </div>
