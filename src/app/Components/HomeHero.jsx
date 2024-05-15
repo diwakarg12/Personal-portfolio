@@ -28,7 +28,7 @@ const HomeHero = () => {
           />
         </span>
         <p className='mt-6'>
-          , specializing in building web applications using JavaScript and
+          specializing in building web applications using JavaScript and
           TypeScript. I have experience with various technologies such as Html,
           CSS, SCSS, Bootstrap, TaiwindCss, ReactJS, Next.js, Express Js,
           MongoDB, Postman testing.{' '}

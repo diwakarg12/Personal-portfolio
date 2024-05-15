@@ -6,7 +6,6 @@ const Page = ({ params }) => {
 
     const urltitle = params.urltitle;
     const data = projectData.find((item) => item.urltitle == urltitle);
-    console.log(data);
 
     return (
         <div className='flex flex-col items-center justify-center sm:w-screen'>
