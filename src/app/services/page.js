@@ -12,7 +12,7 @@ const page = () => {
                         <div className='lg:w-1/2 p-2 lg:pl-20 sm:pl-0 lg:pr-20 sm:pr-0 sm:w-full'>
                             <h2 className='text-2xl font-semibold mb-3 '>{item.title}</h2>
                             <p className='text-lg'>{item.discription}</p>
-                            <Link href="/"><button className='p-2 bg-orange-500 rounded-md mt-4 md:text-center '>View Project</button></Link>
+                            <Link href="/portfolio"><button className='p-2 bg-orange-500 rounded-md mt-4 md:text-center '>View Project</button></Link>
                         </div>
                         <div className='lg:w-1/2 p-2 lg:pl-20 lg:pr-10 md:w-full md:pl-0 md:pr-0'>
                             <Image src={item.pic} alt="UI-UX" width={450} height={400} className='md:w-full' />

@@ -16,7 +16,7 @@ const HomeProjects = () => {
             </div>
             <div className='lg:w-1/2 md:p-12 sm:p-4 md:w-full '>
                 <div className='relative md:w-[97%] lg:full'>
-                    <Image src="/whatsapp.jpg" width={500} height={100} alt="" className='mb-2 md:h-72 sm:h-48 md:w-11/12 sm:w-full object-cover' />
+                    <Image src="/whatsapp.jpg" width={500} height={100} alt="" className='mb-2 md:h-72 sm:h-48 md:w-[94%] sm:w-full object-cover' />
                     <div className='flex bg-white backdrop-blur-xl bg-opacity-5 items-center justify-between w-11/12 mt-4 pl-2 pr-4 absolute bottom-0 md:visible sm:hidden'>
                         <h3 className='text-slate-200 font-normal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor architecto commodi voluptatibus dolorem vel corrupti illo a! Aperiam labore dolores ratione culpa reiciendis, quam et rerum dicta animi odio iste?</h3>
                         <Link href=""><TiArrowForward className='text-green-600 font-bold min-w-10 text-3xl cursor-pointer ' /></Link>

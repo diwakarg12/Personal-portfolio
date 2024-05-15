@@ -13,18 +13,18 @@ export const service = [
         pic: "/backend.jpeg",
         reverseOrder: false,
     },
+    // {
+    //     id: 3,
+    //     title: "Web Designing",
+    //     discription: "I showcase my passion for crafting exceptional User Interface (UI) and User Experience (UX) designs. With a keen eye for aesthetics, I specialize in creating visually stunning UI elements that seamlessly integrate with intuitive UX flows",
+    //     pic: "/ui-ux.png",
+    //     reverseOrder: true,
+    // },
     {
         id: 3,
-        title: "Web Designing",
-        discription: "I showcase my passion for crafting exceptional User Interface (UI) and User Experience (UX) designs. With a keen eye for aesthetics, I specialize in creating visually stunning UI elements that seamlessly integrate with intuitive UX flows",
-        pic: "/ui-ux.png",
-        reverseOrder: true,
-    },
-    {
-        id: 4,
         title: "Digital marketting",
         discription: "Executing digital marketing strategies, I specialize in leveraging various channels to promote brands and drive engagement. With a focus on analyzing data and optimizing campaigns, I implement tactics to enhance visibility and attract target audiences.",
         pic: "/digitalmarketing.webp",
-        reverseOrder: false
+        reverseOrder: true
     },
 ]

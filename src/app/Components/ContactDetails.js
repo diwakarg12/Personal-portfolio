@@ -1,12 +1,37 @@
 import React from 'react'
+import Link from 'next/link'
 
 const ContactDetails = ({ title, content, icon }) => {
     return (
-        <div className='w-72 sm:h-auto md:h-60 flex flex-col items-center justify-center bg-slate-800 md:p-8 sm:p-6 text-white text-xl font-medium border border-white rounded-xl md:ml-6 md:mr-6 md:mt-4 md:mb-8 sm:m-auto sm:mt-4 sm:mb-8'>
-            {icon}
-            <h2 className='text-2xl font-medium mb-2 mt-2'>{title}</h2>
-            <p className='text-center'>{content}</p>
-        </div>
+        <table class="md:w-3/5 sm:w-full bg-white shadow-md">
+            <h1 className=" text-black text-3xl m-auto">Address and Contact</h1>
+            <tbody class="text-blue-gray-900">
+                <tr class="border-b border-t border-blue-gray-200">
+                    <td class="py-3 px-4 font-semibold">Address</td>
+                    <td class="py-3 px-4 font-medium">Chhapra, Bihar</td>
+                </tr>
+                <tr class="border-b border-t border-blue-gray-200">
+                    <td class="py-3 px-4 font-semibold">Email</td>
+                    <td class="py-3 px-4 font-medium"><Link target="_blank" href="mailto:diwakargiri23@gmail.com">diwakargiri23@gmail.com</Link></td>
+                </tr>
+                <tr class="border-b border-blue-gray-200">
+                    <td class="py-3 px-4 font-semibold">LinkedIn</td>
+                    <td class="py-3 px-4 font-medium"><Link target="_blank" href="https://www.linkedin.com/in/diwakarg12/">diwakarg12</Link></td>
+                </tr>
+                <tr class="border-b border-blue-gray-200">
+                    <td class="py-3 px-4 font-semibold">Github</td>
+                    <td class="py-3 px-4 font-medium"><Link target="_blank" href="https://github.com/diwakarg12">diwakarg12</Link></td>
+                </tr>
+                <tr class="border-b border-blue-gray-200">
+                    <td class="py-3 px-4 font-semibold">WhatsApp</td>
+                    <td class="py-3 px-4 font-medium">7488081301</td>
+                </tr>
+                <tr class="border-b border-blue-gray-200">
+                    <td class="py-3 px-4 font-semibold">InstaGram</td>
+                    <td class="py-3 px-4 font-medium"><Link target="_blank" href="#">diwakarg12</Link></td>
+                </tr>
+            </tbody>
+        </table>
     )
 }
 

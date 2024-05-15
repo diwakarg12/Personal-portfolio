@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const HomeAboutMe = () => {
     return (
-        <div className='flex flex-wrap items-center justify-center md:mt-12 lg:mt-40 sm:mt-24'>
+        <div className='flex flex-wrap items-center justify-center md:mt-12 lg:mt-12 sm:mt-12'>
             <div className='lg:w-1/2 flex flex-col items-center justify-center sm:w-full'>
                 <Image src="/profile3.png" alt="Profile Picture" className="md:w-3/4 sm:w-10/12" height={350} width={350} />
             </div>
@@ -24,7 +24,7 @@ const HomeAboutMe = () => {
                         <p className=''>Global customers</p>
                     </div>
                 </div>
-                <button className='bg-orange-600'>Download CV</button>
+                <button className='bg-orange-600 py-2 rounded-sm cursor-pointer'>Download CV</button>
             </div>
         </div>
     )

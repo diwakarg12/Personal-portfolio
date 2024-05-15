@@ -4,8 +4,9 @@ import Link from 'next/link';
 
 const Page = ({ params }) => {
 
-    const id = parseInt(params.id);
-    const data = projectData.find((item) => item.id.toString() == id);
+    const urltitle = params.urltitle;
+    const data = projectData.find((item) => item.urltitle == urltitle);
+    console.log(data);
 
     return (
         <div className='flex flex-col items-center justify-center sm:w-screen'>
@@ -18,7 +19,7 @@ const Page = ({ params }) => {
                 <h1 className='text-4xl font-extrabold text-center mb-12'>{data?.title}</h1>
                 <h2 className='text-3xl font-semibold mb-4'>Overview</h2>
                 <p className='text-gray-500 font-medium'>{data?.description}</p>
-                <p className='underline text-blue-500 text-xl font-medium'><Link href="">Please Visit this link to access the website</Link></p>
+                <p className='underline text-blue-500 text-xl font-medium'><Link href={data?.link ? data?.link : ""} target='_blank'>Please Visit this link to access the website</Link></p>
                 <h2 className='text-2xl text-gray-500 font-semibold mb-8 mt-8'>Key Features</h2>
                 {
                     data?.features?.map((feature, index) => (

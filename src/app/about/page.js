@@ -20,7 +20,7 @@ const page = () => {
                     <AboutEducation title={"Experience"} content={experience} />
                 </div>
             </div>
-            <AboutFollow />
+            {/* <AboutFollow /> */}
         </div>
     )
 }

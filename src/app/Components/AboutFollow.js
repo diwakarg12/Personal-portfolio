@@ -7,7 +7,7 @@ import { TiSocialFacebookCircular } from "react-icons/ti";
 const AboutFollow = () => {
   return (
     <div className='flex w-full lg:text-start md:text-center items-center justify-center mb-12'>
-      <div className='flex lg:w-1/3 md:hidden lg:block sm:hidden items-center justify-end'>
+      <div className='flex lg:w-1/3lg:block sm:hidden items-center justify-center'>
         <Image src="/profile2.png" className={`${styles.image} object-cover`} width={200} height={180} alt='Profile' />
       </div>
       <div className='flex flex-col items-center lg:w-2/3 md:w-full'>
