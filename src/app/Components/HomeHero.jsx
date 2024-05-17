@@ -8,19 +8,19 @@ const HomeHero = () => {
   return (
     <div className=' w-screen flex flex-wrap items-center justify-center m-4 bg-black sm:p-0 sm:m-0 sm:mb-4'>
       <div className='lg:w-1/2 item-start text-white text-lg font-semibold lg:pl-20 lg:pr-20 md:w-full md:text-center lg:text-start sm:pl-4 sm:pr-4'>
-        <h1 className='text-5xl mb-4'>Hi ! 👋</h1>
-        <p className='text-5xl py-2'>
-          MySelf
-          <span className='text-5xl text-orange-400 pl-4'>Diwakar Giri</span>
-        </p>
+        <h1 className='md:text-5xl sm:text-4xl mb-4'>Hi ! 👋</h1>
+        <div className='md:text-5xl sm:text-4xl py-2 md:flex sm:block'>
+          <p>MySelf</p>
+          <p className='text-orange-400 pl-4 '>Diwakar Giri</p>
+        </div>
         <p className='text-3xl py-2'>I am a</p>
-        <span className='text-5xl text-orange-500'>
+        <span className='md:text-5xl sm:text-[2rem] text-orange-500'>
           <Typewriter
             options={{
               strings: [
                 'Frontend Developer',
                 'Web Developer',
-                'MERN Stack Developer',
+                'MERN Developer',
               ],
               autoStart: true,
               loop: true,

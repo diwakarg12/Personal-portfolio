@@ -4,7 +4,7 @@ import Link from 'next/link'
 const ContactDetails = ({ title, content, icon }) => {
     return (
         <table class="md:w-3/5 sm:w-full bg-white shadow-md">
-            <h1 className=" text-black text-3xl m-auto">Address and Contact</h1>
+            <h1 className=" text-black md:text-3xl sm:text-2xl m-auto">Contacts</h1>
             <tbody class="text-blue-gray-900">
                 <tr class="border-b border-t border-blue-gray-200">
                     <td class="py-3 px-4 font-semibold">Address</td>

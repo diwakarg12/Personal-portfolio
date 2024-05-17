@@ -1,6 +1,7 @@
 .formGroup {
   margin-bottom: 1rem;
 }
+
 .inputGroup {
   position: relative;
   display: -ms-flexbox;
@@ -14,7 +15,7 @@
 
 .formControl {
   display: block;
-  width: 95%;
+  width: 100%;
   /* height: calc(1.5em + 0.75rem + 2px); */
   padding: 0.75rem 0.75rem;
   font-size: 1rem;
@@ -99,7 +100,7 @@
 
 .btnBlock {
   display: block;
-  width: 95%;
+  width: 100%;
 }
 
 .btnBlock + .btnBlock {

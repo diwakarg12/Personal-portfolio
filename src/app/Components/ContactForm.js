@@ -29,7 +29,7 @@ const ContactForm = () => {
         })
     };
     return (
-        <form id="fcf-form-id" class="fcf-form-class" method="post" onSubmit={handleSubmit}>
+        <form id="fcf-form-id" class="fcf-form-class" className='w-full' method="post" onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
                 <label for="Name" className={styles.label}>Your name</label>
                 <div className={styles.inputGroup}>

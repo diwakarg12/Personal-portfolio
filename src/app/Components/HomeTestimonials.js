@@ -11,24 +11,21 @@ const HomeTestimonials = () => {
     const testimonials = [
         {
             id: 1,
-            name: 'John Doe',
-            position: 'CEO',
-            message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laboriosam ea cum, modi harum quis asperiores nisi labore eveniet ab, doloremque accusantium debitis rem placeat, numquam voluptatum est similique necessitatibus cumque ad! Distinctio debitis quia possimus, fugiat placeat suscipit sit! Veniam sequi possimus perspiciatis tempore quae et! Amet, dolor blanditiis!",
-            image: '/portfolio1.jpeg'
+            name: 'Ravi Kumar',
+            position: 'Frontend Developer',
+            message: 'Working alongside Diwakar has been incredibly enriching. His expertise in modern JavaScript frameworks and attention to detail are outstanding. He consistently delivers clean, efficient code and transforms complex designs into user-friendly interfaces. His collaborative spirit and proactive problem-solving have greatly benefited our team.'
         },
         {
             id: 2,
-            name: 'Jane Smith',
-            position: 'CTO',
-            message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laboriosam ea cum, modi harum quis asperiores nisi labore eveniet ab, doloremque accusantium debitis rem placeat, numquam voluptatum est similique necessitatibus cumque ad! Distinctio debitis quia possimus, fugiat placeat suscipit sit! Veniam sequi possimus perspiciatis tempore quae et! Amet, dolor blanditiis!",
-            image: '/portfolio2.jpeg'
+            name: 'Ankit Giri',
+            position: 'Software Developer',
+            message: 'I`ve collaborated with Diwakar on several projects, and his frontend skills are top-notch. He has a deep understanding of user experience and design, creating beautiful and intuitive interfaces. His ability to integrate frontend technologies with backend systems ensures seamless performance. Diwakar is a great communicator and team player, making valuable contributions to our development efforts.'
         },
         {
             id: 3,
-            name: 'Bob Johnson',
-            position: 'Marketing Manager',
-            message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laboriosam ea cum, modi harum quis asperiores nisi labore eveniet ab, doloremque accusantium debitis rem placeat, numquam voluptatum est similique necessitatibus cumque ad! Distinctio debitis quia possimus, fugiat placeat suscipit sit! Veniam sequi possimus perspiciatis tempore quae et! Amet, dolor blanditiis!",
-            image: '/portfolio3.jpeg'
+            name: 'Atul Kumar',
+            position: 'Digital Marketing',
+            message: 'Partnering with Diwakar has been a game-changer for our digital campaigns. His ability to create visually appealing and responsive web pages has enhanced our online presence and user engagement. He understands the importance of performance and SEO, ensuring our sites are optimized for search engines. Diwakar works closely with our marketing team, providing robust and innovative web solutions that support our strategies.'
         },
         // {
         //     id: 4,
@@ -103,7 +100,7 @@ const HomeTestimonials = () => {
                     </div>
                 ))
             }
-        </div >
+        </div>
     );
 };
 

@@ -7,7 +7,7 @@ import { projectData } from './projectsData';
 const page = () => {
     return (
         <div className=''>
-            <h1 className='text-center m-auto text-4xl font-medium mt-4 mb-4 border-b w-3/5 '>Here are some of the projects which i have worked </h1>
+            <h1 className='text-start mx-auto text-4xl font-medium pt-4 mb-4 border-b w-3/5 md:block sm:hidden '>Here are some of the projects which i have worked </h1>
             <div className='w-screen flex flex-wrap items-center justify-center text-center'>
                 {projectData.map((data) => (
                     <Link href={`/portfolio/${data.urltitle}`} key={data.id} className=' m-4 ml-8 mr-8 border-2 w-96 flex flex-col flex-wrap justify-center'>
