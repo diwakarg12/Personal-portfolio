@@ -12,68 +12,68 @@ import { HiOutlineXMark } from "react-icons/hi2";
 
 function NavList() {
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-x-24">
+    <ul className='my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-x-24'>
       <Typography
-        as="li"
-        variant="h5"
-        color="white"
-        className="p-1 font-semibold"
+        as='li'
+        variant='h5'
+        color='white'
+        className='p-1 font-semibold'
       >
         <Link
-          href="/"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          href='/'
+          className='flex items-center hover:text-orange-500 transition-colors'
         >
           Home
         </Link>
       </Typography>
       <Typography
-        as="li"
-        variant="h5"
-        color="white"
-        className="p-1 font-semibold"
+        as='li'
+        variant='h5'
+        color='white'
+        className='p-1 font-semibold'
       >
         <Link
-          href="/about"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          href='/about'
+          className='flex items-center hover:text-orange-500 transition-colors'
         >
           About
         </Link>
       </Typography>
       <Typography
-        as="li"
-        variant="h5"
-        color="white"
-        className="p-1 font-semibold"
+        as='li'
+        variant='h5'
+        color='white'
+        className='p-1 font-semibold'
       >
         <Link
-          href="/services"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          href='/services'
+          className='flex items-center hover:text-orange-500 transition-colors'
         >
           Services
         </Link>
       </Typography>
       <Typography
-        as="li"
-        variant="h5"
-        color="white"
-        className="p-1 font-semibold"
+        as='li'
+        variant='h5'
+        color='white'
+        className='p-1 font-semibold'
       >
         <Link
-          href="/portfolio"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          href='/portfolio'
+          className='flex items-center hover:text-orange-500 transition-colors'
         >
           Portfolio
         </Link>
       </Typography>
       <Typography
-        as="li"
-        variant="h5"
-        color="white"
-        className="p-1 font-semibold"
+        as='li'
+        variant='h5'
+        color='white'
+        className='p-1 font-semibold'
       >
         <Link
-          href="/contact"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          href='/contact'
+          className='flex items-center hover:text-orange-500 transition-colors'
         >
           Contact
         </Link>
