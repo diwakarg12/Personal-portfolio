@@ -1,6 +1,7 @@
 'use client';
-import styles from '../contact/Contact.module.css';
 import React, { useState } from 'react';
+import styles from '../contact/Contact.module.css';
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
   const [form, setForm] = useState({
@@ -19,24 +20,36 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add the logic to send the form data to the server
-    console.log(form);
-    setForm({
-      name: '',
-      email: '',
-      message: '',
-    });
+
+    emailjs
+      .send(
+        'service_f4t0ksf', // Replace with your EmailJS service ID
+        'template_tuwgnrq', // Replace with your EmailJS template ID
+        form,
+        'tFPvfCVFVRY6iT3BI' // Replace with your EmailJS user ID
+      )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        });
+      })
+      .catch((error) => {
+        console.error('FAILED...', error);
+      });
   };
+
   return (
     <form
       id='fcf-form-id'
-      class='fcf-form-class'
       className='w-full'
       method='post'
       onSubmit={handleSubmit}
     >
       <div className={styles.formGroup}>
-        <label for='Name' className={styles.label}>
+        <label htmlFor='Name' className={styles.label}>
           Your name
         </label>
         <div className={styles.inputGroup}>
@@ -53,7 +66,7 @@ const ContactForm = () => {
       </div>
 
       <div className={styles.formGroup}>
-        <label for='Email' className={styles.label}>
+        <label htmlFor='Email' className={styles.label}>
           Your email address
         </label>
         <div className={styles.inputGroup}>
@@ -70,7 +83,7 @@ const ContactForm = () => {
       </div>
 
       <div className={styles.formGroup}>
-        <label for='Message' className={styles.label}>
+        <label htmlFor='Message' className={styles.label}>
           Your message
         </label>
         <div className={styles.inputGroup}>
@@ -81,7 +94,7 @@ const ContactForm = () => {
             onChange={handleChange}
             className={styles.formControl}
             rows={6}
-            maxlength='3000'
+            maxLength='3000'
             required
           ></textarea>
         </div>
@@ -91,7 +104,7 @@ const ContactForm = () => {
         <button
           type='submit'
           id='fcf-button'
-          class={`${styles.btn} ${styles.btnPrimary} ${styles.btnLg} ${styles.btnBlock}`}
+          className={`${styles.btn} ${styles.btnPrimary} ${styles.btnLg} ${styles.btnBlock}`}
         >
           Send Message
         </button>
