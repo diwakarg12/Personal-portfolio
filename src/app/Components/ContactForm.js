@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import styles from '../contact/Contact.module.css';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
   const [form, setForm] = useState({
@@ -30,6 +32,7 @@ const ContactForm = () => {
       )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        toast.success('Message Sent!');
         setForm({
           name: '',
           email: '',
@@ -37,6 +40,7 @@ const ContactForm = () => {
         });
       })
       .catch((error) => {
+        toast.error('Error while sending message!');
         console.error('FAILED...', error);
       });
   };
@@ -109,6 +113,7 @@ const ContactForm = () => {
           Send Message
         </button>
       </div>
+      <ToastContainer />
     </form>
   );
 };
