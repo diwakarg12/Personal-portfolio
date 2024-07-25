@@ -46,17 +46,17 @@ const HomeAboutMe = () => {
           className={`flex md:flex-row sm:flex-col mb-8 justify-center items-center mt-4`}
         >
           <div className='w-64 h-36 md:pr-6'>
-            <h1 className='text-3xl font-bold mb-2 text-white'>1+</h1>
+            <h1 className='text-3xl font-bold mb-2 text-white'>01+</h1>
             <p className=''>Years of Experience in Development</p>
           </div>
           <div className='w-64 h-36'>
             <h1 className='text-3xl font-bold mb-2 text-white'>10+</h1>
             <p className=''>Sucessfull Project completion</p>
           </div>
-          {/* <div className='w-64 md:h-36 sm:h-auto'>
-                        <h1 className="text-3xl font-bold mb-2 text-white">60+</h1>
-                        <p className=''>Global customers</p>
-                    </div> */}
+          <div className='w-64 md:h-36 sm:h-auto'>
+            <h1 className='text-3xl font-bold mb-2 text-white'>10K+</h1>
+            <p className=''>Hours of Coding</p>
+          </div>
         </div>
         <button
           onClick={handleDownloadCV}
