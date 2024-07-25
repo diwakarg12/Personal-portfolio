@@ -62,7 +62,7 @@ function NavList() {
           href='/portfolio'
           className='flex items-center hover:text-orange-500 transition-colors'
         >
-          Portfolio
+          Projects
         </Link>
       </Typography>
       <Typography
