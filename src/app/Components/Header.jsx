@@ -9,78 +9,79 @@ import {
 } from '@material-tailwind/react';
 import { IoMenu } from 'react-icons/io5';
 import { HiOutlineXMark } from 'react-icons/hi2';
+import NavList from './NavList';
 
-function NavList() {
-  return (
-    <ul className='my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-x-24'>
-      <Typography
-        as='li'
-        variant='h5'
-        color='white'
-        className='p-1 font-semibold'
-      >
-        <Link
-          href='/'
-          className='flex items-center hover:text-orange-500 transition-colors'
-        >
-          Home
-        </Link>
-      </Typography>
-      <Typography
-        as='li'
-        variant='h5'
-        color='white'
-        className='p-1 font-semibold'
-      >
-        <Link
-          href='/about'
-          className='flex items-center hover:text-orange-500 transition-colors'
-        >
-          About
-        </Link>
-      </Typography>
-      <Typography
-        as='li'
-        variant='h5'
-        color='white'
-        className='p-1 font-semibold'
-      >
-        <Link
-          href='/services'
-          className='flex items-center hover:text-orange-500 transition-colors'
-        >
-          Services
-        </Link>
-      </Typography>
-      <Typography
-        as='li'
-        variant='h5'
-        color='white'
-        className='p-1 font-semibold'
-      >
-        <Link
-          href='/portfolio'
-          className='flex items-center hover:text-orange-500 transition-colors'
-        >
-          Projects
-        </Link>
-      </Typography>
-      <Typography
-        as='li'
-        variant='h5'
-        color='white'
-        className='p-1 font-semibold'
-      >
-        <Link
-          href='/contact'
-          className='flex items-center hover:text-orange-500 transition-colors'
-        >
-          Contact
-        </Link>
-      </Typography>
-    </ul>
-  );
-}
+// function NavList() {
+//   return (
+//     <ul className='my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-x-24'>
+//       <Typography
+//         as='li'
+//         variant='h5'
+//         color='white'
+//         className='p-1 font-semibold'
+//       >
+//         <Link
+//           href='/'
+//           className='flex items-center hover:text-orange-500 transition-colors'
+//         >
+//           Home
+//         </Link>
+//       </Typography>
+//       <Typography
+//         as='li'
+//         variant='h5'
+//         color='white'
+//         className='p-1 font-semibold'
+//       >
+//         <Link
+//           href='/about'
+//           className='flex items-center hover:text-orange-500 transition-colors'
+//         >
+//           About
+//         </Link>
+//       </Typography>
+//       <Typography
+//         as='li'
+//         variant='h5'
+//         color='white'
+//         className='p-1 font-semibold'
+//       >
+//         <Link
+//           href='/services'
+//           className='flex items-center hover:text-orange-500 transition-colors'
+//         >
+//           Services
+//         </Link>
+//       </Typography>
+//       <Typography
+//         as='li'
+//         variant='h5'
+//         color='white'
+//         className='p-1 font-semibold'
+//       >
+//         <Link
+//           href='/portfolio'
+//           className='flex items-center hover:text-orange-500 transition-colors'
+//         >
+//           Projects
+//         </Link>
+//       </Typography>
+//       <Typography
+//         as='li'
+//         variant='h5'
+//         color='white'
+//         className='p-1 font-semibold'
+//       >
+//         <Link
+//           href='/contact'
+//           className='flex items-center hover:text-orange-500 transition-colors'
+//         >
+//           Contact
+//         </Link>
+//       </Typography>
+//     </ul>
+//   );
+// }
 
 export default function Header() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -107,7 +108,7 @@ export default function Header() {
             Diwakar
           </Link>
         </Typography>
-        <div className='hidden ml-80 lg:block '>
+        <div className='hidden ml-72 lg:block '>
           <NavList />
         </div>
         <IconButton

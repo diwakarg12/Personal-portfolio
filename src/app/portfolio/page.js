@@ -11,6 +11,7 @@ const page = () => {
     }
   return (
     <div>
+      {/*
       <div className='w-1/2 m-auto flex justify-between items-center py-6'>
         <div className='px-6 py-1 text-xl font-semibold border  rounded-lg bg-orange-300 text-black hover:bg-orange-700 cursor-pointer'>
           All
@@ -28,12 +29,13 @@ const page = () => {
           Other
         </div>
       </div>
+      */}
       <div className='w-screen flex flex-wrap items-center justify-center text-center'>
         {projectData.map((data) => (
           <Link
             href={`/portfolio/${data.urltitle}`}
             key={data.id}
-            className=' m-4 ml-8 mr-8 border-2 w-96 flex flex-col flex-wrap justify-center'
+            className=' m-4 ml-8 mr-8 border-2 w-80 flex flex-col flex-wrap justify-center'
           >
             <div>
               <Image

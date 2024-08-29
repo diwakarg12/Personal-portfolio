@@ -13,10 +13,10 @@ const page = () => {
             <AboutHero />
             <AboutNumbers />
             <div className='p-2 w-full flex lg:flex-row sm:flex-col items-center justify-center lg:pl-12 lg:pr-12 sm:pl-0 sm:pr-0 mb-10 '>
-                <div className='p-2 lg:pl-24 lg:pr-24 sm:pl-0 sm:pr-0 lg:w-1/2 md:w-4/5 sm:w-full flex items-center justify-center'>
+                <div className='p-2 lg:pl-20 lg:pr-20 sm:pl-0 sm:pr-0 lg:w-1/2 md:w-4/5 sm:w-full flex items-center justify-center'>
                     <AboutEducation title={"Education"} content={education} />
                 </div>
-                <div className='p-2 lg:pl-24 lg:pr-24 sm:pl-0 sm:pr-0 lg:w-1/2 md:w-4/5 sm:w-full flex items-center justify-center'>
+                <div className='p-2 lg:pl-20 lg:pr-20 sm:pl-0 sm:pr-0 lg:w-1/2 md:w-4/5 sm:w-full flex items-center justify-center'>
                     <AboutEducation title={"Experience"} content={experience} />
                 </div>
             </div>

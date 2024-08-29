@@ -77,17 +77,24 @@ const HomeTestimonials = () => {
         // },
     ];
 
+    const trimParagraph = (text, maxLength) => {
+        if (text.length <= maxLength) {
+            return text;
+        }
+        return text.slice(0, maxLength) + '...';
+    };
+
     return (
 
         <div className="rounded-lg flex flex-wrap items-center justify-center mt-8">
             {
                 testimonials.map((testimonial) => (
-                    <div className='md:w-[26rem] sm:w-11/12 mx-4 my-4 flex justify-center items-start text-start relative md:border-black' key={testimonial.id}>
-                        <div className='bg-orange-400 text-black rounded-lg p-6 font-serif'>
+                    <div className='md:w-[24rem] sm:w-11/12 mx-4 my-4 flex justify-center items-start text-start relative md:border-black' key={testimonial.id}>
+                        <div className='bg-orange-400 text-black rounded-lg p-6 font-serif h-[350px]'>
                             <h1 className='text-3xl font-bold pt-2'>{testimonial.name}</h1>
                             <h2 className="text-xl font-semibold pb-2">{testimonial.position}</h2>
                             <p className="my-4">
-                                {testimonial.message}
+                                {trimParagraph(testimonial.message, 250)}
                             </p>
                             <div className='flex justify-start my-6'>
                                 <IoMdStar className='text-green-600 text-3xl' />

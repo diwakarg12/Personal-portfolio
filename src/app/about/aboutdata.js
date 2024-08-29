@@ -9,13 +9,23 @@ export const education = [
     position: 'Bachelor of computer application',
     duration: '2019 - 2022',
   },
+  {
+    organisation: 'GD mission public School',
+    position: 'Intermediate',
+    duration: '2017 - 2019',
+  }
 ];
 
 export const experience = [
   {
+    organisation: 'Americana Restaurants',
+    position: 'Software Developer',
+    duration: 'Aug 2024 - Present',
+  },
+  {
     organisation: 'APIxLABs',
     position: 'Frontend Developer',
-    duration: 'Aug 2023 - Present',
+    duration: 'Aug 2023 - Jul 2024',
   },
   {
     organisation: 'Celebal technologies',
