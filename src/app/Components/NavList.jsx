@@ -2,20 +2,22 @@
 import Link from 'next/link';
 import { Typography } from '@material-tailwind/react';
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleTheme } from '../store/themeSlice';
 
 export default function NavList() {
-    const [mode, setMode] = React.useState(false);
+    const mode = useSelector((state)=>state.theme.mode);
+    const dispatch = useDispatch();
 
-    const toggleMode = () => {
-        setMode(prevMode => !prevMode);
+    const handleToggle = () => {
+        dispatch(toggleTheme());
     }
   return (
-    <ul className='my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-x-20'>
+    <ul className={`my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-x-20`}>
       <Typography
         as='li'
         variant='h5'
-        color='white'
+        color={mode ? 'text-white' : 'text-black'}
         className='p-1 font-semibold'
       >
         <Link
@@ -28,7 +30,7 @@ export default function NavList() {
       <Typography
         as='li'
         variant='h5'
-        color='white'
+        color={mode ? 'text-white' : 'text-black'}
         className='p-1 font-semibold'
       >
         <Link
@@ -41,7 +43,7 @@ export default function NavList() {
       <Typography
         as='li'
         variant='h5'
-        color='white'
+        color={mode ? 'text-white' : 'text-black'}
         className='p-1 font-semibold'
       >
         <Link
@@ -54,7 +56,7 @@ export default function NavList() {
       <Typography
         as='li'
         variant='h5'
-        color='white'
+        color={mode ? 'text-white' : 'text-black'}
         className='p-1 font-semibold'
       >
         <Link
@@ -67,7 +69,7 @@ export default function NavList() {
       <Typography
         as='li'
         variant='h5'
-        color='white'
+        color={mode ? 'text-white' : 'text-black'}
         className='p-1 font-semibold'
       >
         <Link
@@ -77,7 +79,7 @@ export default function NavList() {
           Contact
         </Link>
       </Typography>
-       <div className='flex items-center hover:text-orange-500 transition-colors cursor-pointer' onClick={toggleMode}>
+       <div className={`flex items-center hover:text-orange-500 transition-colors cursor-pointer ${mode ? 'text-black':'text-white'}`} onClick={handleToggle}>
           {
             mode ? <MdDarkMode className="size-6" /> : <MdLightMode className="size-6" />
           }

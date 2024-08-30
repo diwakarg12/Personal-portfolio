@@ -1,14 +1,17 @@
+'use client';
 import Link from 'next/link';
 import footerStyle from '../Styles/Footer.module.css';
 import Image from 'next/image';
+import { useSelector } from 'react-redux';
 
 const Footer = () => {
+  const mode = useSelector(state=>state.theme.mode);
   return (
-    <div className='bg-white text-slate-700 pt-10 pb-10 w-full text-black'>
+    <div className={`pt-10 pb-10 w-full ${mode ? 'bg-white text-black' : 'bg-black text-white' }`}>
       <div className=' flex md:flex-row sm:flex-col items-center justify-center w-full'>
         <div className='lg:w-1/2 md:w-1/4 flex items-center justify-start lg:pl-32 md:pl-16 '>
           <Link href='/'>
-            <Image src='/logo2.png' alt='Logo' width={120} height={64} />
+            <Image src={mode ? '/logo2.png' :'/logo2.png'} alt='Logo' width={120} height={64} />
           </Link>
         </div>
         <div className='lg:w-1/2 md:w-3/4'>

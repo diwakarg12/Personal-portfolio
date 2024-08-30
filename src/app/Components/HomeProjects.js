@@ -1,12 +1,15 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TiArrowForward } from 'react-icons/ti';
+import { useSelector } from 'react-redux';
 
 const HomeProjects = () => {
+  const mode = useSelector(state=>state.theme.mode);
   return (
-    <div className='flex flex-wrap justify-center mt-8 mb-8 md:items-center lg:items-start'>
+    <div className={`flex flex-wrap justify-center py-8 md:items-center lg:items-start ${mode ? 'bg-white text-black' : 'bg-black text-white'}`}>
       <div className='lg:w-1/2 lg:items-start lg:p-12 relative md:w-full md:items-center md:p-0'>
-        <h1 className='text-5xl text-white font-bold mb-6'>
+        <h1 className='text-5xl font-bold mb-6'>
           Selected Projects
         </h1>
         <p className='text-lg font-medium mb-16 mr-4'>
@@ -19,7 +22,7 @@ const HomeProjects = () => {
             width={600}
             height={300}
             alt=''
-            className='opacity-80 sm:w-11/12 sm:mx-auto md:w-full md:mx-0'
+            className='opacity-80 sm:w-11/12 sm:mx-auto md:w-full md:mx-0 shadow-2xl'
           />
         </Link>
         <div

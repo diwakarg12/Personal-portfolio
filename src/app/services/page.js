@@ -1,10 +1,15 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+'use client';
 import Link from 'next/link'
 import Image from 'next/image'
 import { service } from './serviceOffered'
+import { useSelector } from 'react-redux'
 
 const page = () => {
+    const mode = useSelector(state=>state.theme.mode);
     return (
-        <div className='bg-black md:p-6 sm:p-0 flex flex-col flex-wrap items-center justify-center'>
+        <div className={`md:p-6 sm:p-0 flex flex-col flex-wrap items-center justify-center ${mode ? 'bg-white text-black' : 'bg-black text-white'}`}>
+            
             <h1 className='text-4xl font-semibold md:text-start'>My Services</h1>
             {
                 service.map((item) => (

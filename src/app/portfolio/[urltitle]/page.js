@@ -1,14 +1,16 @@
+'use client';
 import { projectData } from '../projectsData';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useSelector } from 'react-redux';
 
 const Page = ({ params }) => {
-
+    const mode = useSelector(state=>state.theme.mode);
     const urltitle = params.urltitle;
     const data = projectData.find((item) => item.urltitle == urltitle);
 
     return (
-        <div className='flex flex-col items-center justify-center sm:w-screen'>
+        <div className={`flex flex-col items-center justify-center sm:w-screen ${mode ? 'text-black bg-white': 'text-white bg-black'}`}>
             <div className='mt-12 flex items-center justify-center overflow-x-hidden'>
                 <Image src={data?.img} width={400} height={400} className='w-1/3 sm:hidden lg:block h-80 mt-32 rounded-lg' alt="" />
                 <Image src={data?.img} width={400} height={400} className='lg:w-2/3 sm:w-11/12 mx-2 h-[28rem] object-cover rounded-lg' alt="" />
@@ -37,5 +39,3 @@ const Page = ({ params }) => {
 };
 
 export default Page;
-
-

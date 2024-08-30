@@ -29,7 +29,7 @@ const PageNotFound = () => {
                         Contact us
                         <span
                             aria-hidden='true'
-                            className='absolute md:bottom-[21.5rem] sm:bottom-[14.6rem] ml-28'
+                            className='absolute md:bottom-[8.9rem] ml-28'
                         >
                             &rarr;
                         </span>

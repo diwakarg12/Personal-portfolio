@@ -3,11 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import Typewriter from 'typewriter-effect';
+import { useSelector } from 'react-redux';
 
 const HomeHero = () => {
+  const mode = useSelector((state)=>state.theme.mode);
   return (
-    <div className=' w-screen flex flex-wrap items-center justify-center m-4 bg-black sm:p-0 sm:m-0 sm:mb-4'>
-      <div className='lg:w-1/2 item-start text-white text-lg font-semibold lg:pl-20 lg:pr-20 md:w-full md:text-center lg:text-start sm:pl-4 sm:pr-4'>
+    <div className={`w-screen flex flex-wrap items-center justify-center sm:p-0 sm:m-0 sm:pb-4 lg:pt-6 ${mode ? 'bg-white text-black':'bg-black text-white'}`}>
+      <div className='lg:w-1/2 item-start text-lg font-semibold lg:pl-20 lg:pr-20 md:w-full md:text-center lg:text-start sm:pl-4 sm:pr-4'>
         <h1 className='md:text-5xl sm:text-4xl mb-4'>Hi ! 👋</h1>
         <div className='md:text-5xl sm:text-4xl py-2 md:flex sm:block'>
           <p>MySelf</p>

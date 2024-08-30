@@ -10,78 +10,7 @@ import {
 import { IoMenu } from 'react-icons/io5';
 import { HiOutlineXMark } from 'react-icons/hi2';
 import NavList from './NavList';
-
-// function NavList() {
-//   return (
-//     <ul className='my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-x-24'>
-//       <Typography
-//         as='li'
-//         variant='h5'
-//         color='white'
-//         className='p-1 font-semibold'
-//       >
-//         <Link
-//           href='/'
-//           className='flex items-center hover:text-orange-500 transition-colors'
-//         >
-//           Home
-//         </Link>
-//       </Typography>
-//       <Typography
-//         as='li'
-//         variant='h5'
-//         color='white'
-//         className='p-1 font-semibold'
-//       >
-//         <Link
-//           href='/about'
-//           className='flex items-center hover:text-orange-500 transition-colors'
-//         >
-//           About
-//         </Link>
-//       </Typography>
-//       <Typography
-//         as='li'
-//         variant='h5'
-//         color='white'
-//         className='p-1 font-semibold'
-//       >
-//         <Link
-//           href='/services'
-//           className='flex items-center hover:text-orange-500 transition-colors'
-//         >
-//           Services
-//         </Link>
-//       </Typography>
-//       <Typography
-//         as='li'
-//         variant='h5'
-//         color='white'
-//         className='p-1 font-semibold'
-//       >
-//         <Link
-//           href='/portfolio'
-//           className='flex items-center hover:text-orange-500 transition-colors'
-//         >
-//           Projects
-//         </Link>
-//       </Typography>
-//       <Typography
-//         as='li'
-//         variant='h5'
-//         color='white'
-//         className='p-1 font-semibold'
-//       >
-//         <Link
-//           href='/contact'
-//           className='flex items-center hover:text-orange-500 transition-colors'
-//         >
-//           Contact
-//         </Link>
-//       </Typography>
-//     </ul>
-//   );
-// }
+import { useSelector } from 'react-redux';
 
 export default function Header() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -96,9 +25,10 @@ export default function Header() {
       window.removeEventListener('resize', handleWindowResize);
     };
   }, []);
+  const mode = useSelector((state) => state.theme.mode)
 
   return (
-    <Navbar className='lg:mx-auto lg:w-[1150rem] md:max-w-screen-md py-3 bg-transparent text-white border-b-2 border-r-0 border-l-0 border-t-0 border-orange-700 rounded-none sticky top-0 z-10'>
+    <Navbar className={`lg:mx-auto lg:w-[1150rem] md:max-w-screen-md py-3 border-b-2 border-r-0 border-l-0 border-t-0 border-orange-700 rounded-none sticky top-0 z-10 ${mode ? 'text-black bg-white' : 'text-white bg-black'}`}>
       <div className='flex items-center'>
         <Typography as='li' variant='h4' className='cursor-pointer py-1.5'>
           <Link

@@ -4,11 +4,10 @@ import AboutHero from '../Components/AboutHero';
 import AboutNumbers from '../Components/AboutNumbers';
 import AboutEducation from '../Components/AboutEducation';
 import { education, experience } from './aboutdata';
-import AboutFollow from '../Components/AboutFollow';
-const page = () => {
 
+const page = () => {
     return (
-        <div className='bg-slate-800 p-1 overflow-x-hidden'>
+        <div className='overflow-x-hidden'>
             <About />
             <AboutHero />
             <AboutNumbers />
@@ -20,7 +19,6 @@ const page = () => {
                     <AboutEducation title={"Experience"} content={experience} />
                 </div>
             </div>
-            {/* <AboutFollow /> */}
         </div>
     )
 }

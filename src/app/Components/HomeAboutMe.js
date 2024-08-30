@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useSelector } from 'react-redux';
 
 const HomeAboutMe = () => {
   const [showDialog, setShowDialog] = useState(false);
@@ -23,8 +24,10 @@ const HomeAboutMe = () => {
     setShowDialog(false);
   };
 
+  const mode = useSelector(state=>state.theme.mode);
+
   return (
-    <div className='flex flex-wrap items-center justify-center md:mt-12 lg:mt-12 sm:mt-12'>
+    <div className={`flex flex-wrap items-center justify-center md:pt-12 lg:pt-12 sm:pt-12 ${mode ? 'bg-white text-black' : 'bg-black text-white'}`}>
       <div className='lg:w-1/2 flex flex-col items-center justify-center sm:w-full'>
         <Image
           src='/profile3.png'
@@ -34,7 +37,7 @@ const HomeAboutMe = () => {
           width={350}
         />
       </div>
-      <div className='lg:w-1/2 item-start lg:text-start sm:flex sm:flex-col text-white text-lg font-semibold pr-28 sm:p-4 sm:w-full sm:pt-12 lg:mt-0 sm:text-center md:pl-28 lg:pl-0'>
+      <div className='lg:w-1/2 item-start lg:text-start sm:flex sm:flex-col text-lg font-semibold pr-28 sm:p-4 sm:w-full sm:pt-12 lg:mt-0 sm:text-center md:pl-28 lg:pl-0'>
         <h1 className='text-5xl mb-6 text-white w-full'>About Me</h1>
         <p className=''>
           iligent and organized Software Engineer, adept at transforming ideas
@@ -46,15 +49,15 @@ const HomeAboutMe = () => {
           className={`flex md:flex-row sm:flex-col mb-8 justify-center items-center mt-4`}
         >
           <div className='w-64 h-36 md:pr-6'>
-            <h1 className='text-3xl font-bold mb-2 text-white'>01+</h1>
+            <h1 className='text-3xl font-bold mb-2'>01+</h1>
             <p className=''>Years of Experience in Development</p>
           </div>
           <div className='w-64 h-36'>
-            <h1 className='text-3xl font-bold mb-2 text-white'>10+</h1>
+            <h1 className='text-3xl font-bold mb-2'>10+</h1>
             <p className=''>Sucessfull Project completion</p>
           </div>
           <div className='w-64 md:h-36 sm:h-auto'>
-            <h1 className='text-3xl font-bold mb-2 text-white'>10K+</h1>
+            <h1 className='text-3xl font-bold mb-2'>10K+</h1>
             <p className=''>Hours of Coding</p>
           </div>
         </div>

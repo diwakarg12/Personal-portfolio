@@ -1,10 +1,14 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+'use client';
+import { useSelector } from "react-redux";
 import ContactDetails from "../Components/ContactDetails";
 import ContactForm from "../Components/ContactForm";
-import Image from 'next/image';
+
 
 const page = () => {
+    const mode = useSelector(state => state.theme.mode);
     return (
-        <div className="bg-black p-2">
+        <div className={`p-2 ${mode ? 'text-black bg-white' : 'text-white bg-black'}`}>
             <h1 className="text-center text-4xl font-medium mt-4 mb-4">My Contact Details</h1>
             <div className="flex flex-wrap items-center justify-center">
                 <div className="md:w-1/2 md:p-4 sm:p-0 flex flex-col sm:w-full">
