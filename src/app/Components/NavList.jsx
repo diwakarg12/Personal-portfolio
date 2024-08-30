@@ -81,7 +81,7 @@ export default function NavList() {
       </Typography>
        <div className={`flex items-center hover:text-orange-500 transition-colors cursor-pointer ${mode ? 'text-black':'text-white'}`} onClick={handleToggle}>
           {
-            mode ? <MdDarkMode className="size-6" /> : <MdLightMode className="size-6" />
+            mode ? <MdDarkMode title='Dark Mode' className="size-6" /> : <MdLightMode title='Light Mode' className="size-6" />
           }
        </div>
     </ul>

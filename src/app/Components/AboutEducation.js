@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 const AboutEducation = ({ title, content }) => {
     const mode = useSelector(state=>state.theme.mode);
     return (
-        <div className={`w-full p-2 ${mode ? 'bg-white text-black' : 'bg-black text-white'}`}>
+        <div className={`w-full p-4 ${mode ? 'bg-white text-black' : 'bg-black text-white'}`}>
             <h1 className='text-3xl font-semibold pt-2 pb-4'>{title}</h1>
             {
                 content.map((item, index) => (

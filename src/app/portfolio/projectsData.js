@@ -1,8 +1,8 @@
 export const projectData = [
   {
     id: 1,
-    title: 'Movie Recommendation system',
-    urltitle: 'movie-recommendation-system',
+    title: 'Movie Match',
+    urltitle: 'movie-match',
     img: '/movie-recommendation-system.jpeg',
     description:
       'It is a AI featured movie recommendation website where a user can search for any type of movies or webseries by their name, by their Genere or by the story line of the movie or webseries and then the movie or webseries will search in the movies database and then will get the result based on the search on the page, I have used gemini AI for the movie name search and then used TMDB API for the movies data and then the data will be presented. For State management i have used redux-toolkit.',
@@ -29,7 +29,7 @@ export const projectData = [
       },
     ],
     toolsUsed: 'React JS, Redux-toolkit , Tailwind css, Firebase.',
-    link: 'https://movie-gpt-phi.vercel.app/',
+    link: 'https://movies-match.vercel.app/',
   },
   {
     id: 2,

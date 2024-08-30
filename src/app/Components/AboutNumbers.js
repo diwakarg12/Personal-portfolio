@@ -7,7 +7,7 @@ const AboutNumbers = () => {
   const mode = useSelector(state=>state.theme.mode);
   return (
     <div
-      className={`flex md:flex-row sm:flex-col p-4 pb-8 pt-12 justify-center text-center ${mode ? 'bg-white text-black' : 'bg-black text-white'}`}
+      className={`flex md:flex-row sm:flex-col pb-8 pt-12 justify-center text-center ${mode ? 'bg-white text-black' : 'bg-black text-white'}`}
     >
       <div className='md:w-60 sm:w-full h-36 p-8 border-gray-100 md:border-r sm:border-none ml-4 mr-4'>
         <h1 className='text-4xl font-bold mb-2'>1+</h1>
