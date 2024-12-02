@@ -1,13 +1,17 @@
+'use client'
 import React from 'react';
 import About from '../Components/About';
 import AboutHero from '../Components/AboutHero';
 import AboutNumbers from '../Components/AboutNumbers';
 import AboutEducation from '../Components/AboutEducation';
 import { education, experience } from './aboutdata';
+import { useSelector } from 'react-redux';
 
-const page = () => {
+const page = ({con}) => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const mode = useSelector(state => state.theme.mode)
     return (
-        <div className='overflow-x-hidden'>
+        <div className={`overflow-x-hidden ${mode ? 'bg-white text-black' : 'bg-black text-white'}`}>
             <About />
             <AboutHero />
             <AboutNumbers />
